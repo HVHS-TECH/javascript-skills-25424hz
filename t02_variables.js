@@ -7,12 +7,12 @@ console.log("Running t02_introduction.js")
 let age = 15;
 let dollar = 5000;
 let name = "axolotl";
-let year = 2026
+let year = 2026;
 
 /****************************
 Main Code
 ****************************/
-console.log("Hello, "+ name);
+console.log("Hello, "+ name)
 console.log("As of "+ year +" you are " + age,"years old")
 console.log("Congratulations! You have "+ dollar +" dollars")
 

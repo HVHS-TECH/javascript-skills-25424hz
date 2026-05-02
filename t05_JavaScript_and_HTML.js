@@ -19,16 +19,16 @@ OUTPUT.innerHTML += "<h2>Added by JavaScript</h2>"
 OUTPUT.innerHTML += "<p>Hello, " + name + "</p>";
 OUTPUT.innerHTML += "<p>As of " + year + ", you are " + age + " years old.</p>";
 answer = year - age;
-OUTPUT.innerHTML += "If you have celebrated your birthday this year, you were born in " + answer + "</p>";
+OUTPUT.innerHTML += "<p>If you have celebrated your birthday this year, you were born in " + answer + "</p>";
 answer = answer - 1;
-OUTPUT.innerHTML += "If you haven't celebrated your birthday this year, you were born in " + answer + "</p>";
+OUTPUT.innerHTML += "<p>If you haven't celebrated your birthday this year, you were born in " + answer + "</p>";
 answer = age + 10;
-OUTPUT.innerHTML += "In ten years, you'll be " + answer + " years old</p>";
-OUTPUT.innerHTML += "Congratulations! You have " + dollar + " dollars</p>";
+OUTPUT.innerHTML += "<p>In ten years, you'll be " + answer + " years old</p>";
+OUTPUT.innerHTML += "<p>Congratulations! You have " + dollar + " dollars</p>";
 answer = dollar / 2;
-OUTPUT.innerHTML += "You spend half of your money, now you have $" + answer + "</p>";
+OUTPUT.innerHTML += "<p>You spend half of your money, now you have $" + answer + "</p>";
 answer = answer + 3;
-OUTPUT.innerHTML += "Then you picked $3 on the ground, now you have $" + answer + "</p>";
+OUTPUT.innerHTML += "<p>Then you picked $3 on the ground, now you have $" + answer + "</p>";
 
 /***************************
 function
