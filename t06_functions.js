@@ -1,7 +1,7 @@
 /****************************
 Header here
 ****************************/
-console.log("Running t05_introduction.js")
+console.log("Running t06_introduction.js")
 
 // Variables below
 let age = 15;
@@ -29,6 +29,7 @@ answer = dollar / 2;
 OUTPUT.innerHTML += "<p>You spend half of your money, now you have $" + answer + "</p>";
 answer = answer + 3;
 OUTPUT.innerHTML += "<p>Then you picked $3 on the ground, now you have $" + answer + "</p>";
+OUTPUT.innerHTML += "<br>";
 
 welcome()
 

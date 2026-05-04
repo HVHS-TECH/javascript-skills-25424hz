@@ -1,4 +1,4 @@
-const output = document.getElementById("output");
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput")
 
 /* Read the slides, make a prediction, then uncomment this code.
 
