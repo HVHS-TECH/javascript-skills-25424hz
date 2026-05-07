@@ -7,7 +7,7 @@ console.log("Running t03_introduction.js")
 let age = 15;
 let dollar = 5000;
 let name = "axolotl";
-let year = 2026
+const year = 2026
 var answer;
 
 /****************************

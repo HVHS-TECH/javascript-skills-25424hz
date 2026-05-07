@@ -1,24 +1,21 @@
-const OUTPUT = document.getElementById("spaceForJavaScriptOutput")
+console.log("Running t08_introduction.js")
 
-/* Read the slides, make a prediction, then uncomment this code.
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 
 var myVar = 0;
-output.innerHTML = "Start: "+myVar+"<br>";
+OUTPUT.innerHTML = "<p>Start: "+myVar+"</p><br>";
 
 functionOne();
 function functionOne() {
   myVar = 1;
-  output.innerHTML += "functionOne: "+myVar+"<br>";
+  OUTPUT.innerHTML += "<p>functionOne: "+myVar+"</p><br>";
 }
 
 functionTwo();
 function functionTwo() {
   var myVar = 2;
-  output.innerHTML += "functionTwo: "+myVar+"<br>";
+  OUTPUT.innerHTML += "<p>functionTwo: "+myVar+"</p><br>";
 }
 
-output.innerHTML += "end: "+myVar+"<br>";
-
-
-*/
+OUTPUT.innerHTML += "<p>end: "+myVar+"</p><br>";
