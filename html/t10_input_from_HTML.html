@@ -20,13 +20,13 @@
   <p>Open the console <code>(option-command-i)</code> to see the messages.</p>
 
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
-
+  
+  <button onclick="start()">START</button>
   <form onsubmit="return false;">
-    <label for="formName">お名前は：</label>
-    <input type="text" id="nameField" name="formName" placeholder="名前">
-    <input type="submit" onClick=getFormImput()>
+      <label for="formName">Who is here:</label><br>
+      <input type="text" id="nameField" name="formName" value="宮崎駿">
+      <input type="submit" value="SUBMIT" onClick=getFormImput()>
   </form>
-
   <div id="spaceForJavaScriptOutput">
 
     The output of your script will go here.

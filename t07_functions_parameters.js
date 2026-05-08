@@ -4,11 +4,6 @@ Header here
 console.log("Running t07_introduction.js")
 
 // Variables below
-let age = 15;
-let dollar = 5000;
-let userName = "Axolotl";
-let year = 2026
-var answer;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput")
 
 /****************************

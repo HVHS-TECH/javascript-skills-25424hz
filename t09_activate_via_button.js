@@ -23,14 +23,13 @@ function start(){
     displayProduct("Chips", 2.99);
     displayProduct("Drink", 2.49);
 
-    /***************************
-    function
-    ****************************/
+/***************************
+function
+****************************/
     function welcome() {
         OUTPUT.innerHTML += "<p>Hello, " +userName+ ", welcome to the shop</p>";
     }
     function displayProduct(_name, _price) {
         OUTPUT.innerHTML += "<p>The " +_name+ " is $" +_price+ "</p>";
     }
-
 }
