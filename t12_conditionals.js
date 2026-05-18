@@ -22,11 +22,11 @@ function start() {
     displayProduct("Drink", 2.49);
     OUTPUT.innerHTML += "<br>"
     something();
-    if (dollar>4) {
+    if (dollar > 4) {
         OUTPUT.innerHTML += "<p>That's great, you can buy a $4 chocolate bar.</p>"
-    }else if (dollar=4) {
+    } else if (dollar = 4) {
         OUTPUT.innerHTML += "Wow you can just buy one $4 chocolate bar!"
-    }else {
+    } else {
         OUTPUT.innerHTML += "<p>Holy hell, you cannot even afford a $4 chocolate bar!</p>"
     }
 }
