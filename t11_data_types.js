@@ -30,7 +30,6 @@ function displayProduct(_name, _price) {
     OUTPUT.innerHTML += "<p>The " + _name + " is $" + _price + "</p>";
 }
 function getFormInput() {
-    
     const NAME_FIELD = document.getElementById("nameField");
     userName = NAME_FIELD.value;
     const AGE_FIELD = document.getElementById("ageField");
