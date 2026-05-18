@@ -4,8 +4,8 @@ Header here
 console.log("Running t11_introduction.js")
 
 // Variables below
-let age = 24;
-let dollar = 5000;
+var age;
+var dollar
 var userName;
 let year = 1989;
 var answer;
@@ -14,30 +14,31 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 /****************************
 Main Code
 ****************************/
-function start(){ 
+function start() {
     OUTPUT.innerHTML = "<br>"
     OUTPUT.innerHTML += "<h2>Added by JavaScript</h2>"
-    welcome();
     displayProduct("Chocolate Bar", 3.99);
     displayProduct("Chips", 2.99);
     displayProduct("Drink", 2.49);
     OUTPUT.innerHTML += "<br>"
-    gossip();
+    something();
 }
 /***************************
 function
 ****************************/
 function displayProduct(_name, _price) {
-    OUTPUT.innerHTML += "<p>The " +_name+ " is $" +_price+ "</p>";
+    OUTPUT.innerHTML += "<p>The " + _name + " is $" + _price + "</p>";
 }
-function welcome() {
+function getFormInput() {
+    
     const NAME_FIELD = document.getElementById("nameField");
-    let userName = NAME_FIELD.value;
-    OUTPUT.innerHTML += "<h3>Welcome to the snack shop, Mr./Ms. " +userName+ ".</h4>"
+    userName = NAME_FIELD.value;
+    const AGE_FIELD = document.getElementById("ageField");
+    age = Number(AGE_FIELD.value);
+    const MONEY_FIELD = document.getElementById("moneyField")
+    dollar = Number(MONEY_FIELD.value);
 }
-function gossip() {
-    const NAME_FIELD = document.getElementById("nameField");
-    let userName = NAME_FIELD.value;
+function something() {
     OUTPUT.innerHTML += "<h2>Hello, " + userName + "</h2>";
     OUTPUT.innerHTML += "<p>As of " + year + ", you are " + age + " years old.</p>";
     answer = year - age;

@@ -17,7 +17,7 @@ Main Code
 function start(){ 
     OUTPUT.innerHTML = "<br>"
     OUTPUT.innerHTML += "<h2>Added by JavaScript</h2>"
-    welcome();
+    getFormInput();
     displayProduct("Chocolate Bar", 3.99);
     displayProduct("Chips", 2.99);
     displayProduct("Drink", 2.49);
@@ -30,14 +30,12 @@ function
 function displayProduct(_name, _price) {
     OUTPUT.innerHTML += "<p>The " +_name+ " is $" +_price+ "</p>";
 }
-function welcome() {
+function getFormInput() {
     const NAME_FIELD = document.getElementById("nameField");
-    let userName = NAME_FIELD.value;
-    OUTPUT.innerHTML += "<h3>Welcome to the snack shop, Mr./Ms. " +userName+ ".</h4>"
+    userName = NAME_FIELD.value;
+    OUTPUT.innerHTML = "<h3>Welcome to the snack shop, Mr./Ms. " +userName+ ".</h4>"
 }
 function gossip() {
-    const NAME_FIELD = document.getElementById("nameField");
-    let userName = NAME_FIELD.value;
     OUTPUT.innerHTML += "<h2>Hello, " + userName + "</h2>";
     OUTPUT.innerHTML += "<p>As of " + year + ", you are " + age + " years old.</p>";
     answer = year - age;
