@@ -21,6 +21,17 @@
 
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
 
+  <form onsubmit="return false;">
+      <label for="formName">Who is here:</label><br>
+      <input type="text" id="nameField" name="formName" value="Sesame"><br>
+      <label for="formAge">How old are you:</label><br>
+      <input type="text" id="ageField" name="formAge" value="500"><br>
+      <lable for="formMoney">Your pocket money:</lable><br>
+      <input type="text" id="moneyField" name="formMoney" value="2000">
+      <input type="submit" value="SUBMIT" onclick=getFormInput()>
+  </form><br>
+  <button onclick="start()">START</button>
+
   <div id="spaceForJavaScriptOutput">
 
     The output of your script will go here.

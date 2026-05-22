@@ -5,7 +5,7 @@ console.log("Running t11_introduction.js")
 
 // Variables below
 var age;
-var dollar
+var dollar;
 var userName;
 let year = 1989;
 var answer;
