@@ -10,11 +10,13 @@ var userName;
 let year = 2025;
 var answer;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+let chocolate = ["You loath chocolate","Chocolate is meh","Chocolate is pretty good","Chocolate is the best thing EVER!!!!"]
 
 /****************************
 Main Code
 ****************************/
 function start() {
+    getFormInput();
     OUTPUT.innerHTML = "<br>"
     OUTPUT.innerHTML += "<h2>Added by JavaScript</h2>"
     displayProduct("Chocolate Bar", 3.99);
@@ -29,8 +31,9 @@ function start() {
     } else if (dollar == 4) {
         OUTPUT.innerHTML += "Wow you can just buy one $4 chocolate bar!<br>Now you have nothing left."
     } else {
-        OUTPUT.innerHTML += "<p>Holy hell, you cannot even afford a $4 chocolate bar!</p>"
+        OUTPUT.innerHTML += "<p>Holy hell, you cannot even afford a $4 chocolate bar!</p><br>"
     }
+    OUTPUT.innerHTML += "<p>"+chocolate[chocChoice]+"</p><br>";
 }
 /***************************
 function
@@ -43,8 +46,10 @@ function getFormInput() {
     userName = NAME_FIELD.value;
     const AGE_FIELD = document.getElementById("ageField");
     age = Number(AGE_FIELD.value);
-    const MONEY_FIELD = document.getElementById("moneyField")
+    const MONEY_FIELD = document.getElementById("moneyField");
     dollar = Number(MONEY_FIELD.value);
+    const CHOC_FIELD = document.getElementById("chocField");
+    chocChoice = CHOC_FIELD.value;
 }
 function something() {
     OUTPUT.innerHTML += "<h2>Hello, " + userName + "</h2>";
